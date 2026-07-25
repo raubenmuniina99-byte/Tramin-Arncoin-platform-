@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { FiMenu, FiLogOut, FiHome } from 'react-icons/fi';
-import { MdMarketplace, MdAccountBalanceWallet, MdShowChart } from 'react-icons/md';
+import { MdAttachMoney, MdAccountBalanceWallet, MdShowChart } from 'react-icons/md';
 import { TbMining } from 'react-icons/tb';
 import { BiSolidPieChartAlt } from 'react-icons/bi';
 
@@ -10,7 +10,7 @@ const NavbarBottom = () => {
   const [showMenu, setShowMenu] = React.useState(false);
 
   const menuItems = [
-    { label: 'Market', path: '/market', icon: <MdMarketplace size={24} /> },
+    { label: 'Market', path: '/market', icon: <MdAttachMoney size={24} /> },
     { label: 'Wallets', path: '/g-wallet', icon: <MdAccountBalanceWallet size={24} /> },
     { label: 'Mining', path: '/mining', icon: <TbMining size={24} /> },
     { label: 'Profile', path: '/profile', icon: <BiSolidPieChartAlt size={24} /> },
