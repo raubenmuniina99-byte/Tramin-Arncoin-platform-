@@ -1,0 +1,26 @@
+{
+  "buildCommand": "cd frontend && npm run build",
+  "outputDirectory": "frontend/build",
+  "framework": "react",
+  "env": [
+    {
+      "key": "REACT_APP_API_URL",
+      "value": "@react_app_api_url"
+    },
+    {
+      "key": "REACT_APP_SUPABASE_URL",
+      "value": "@react_app_supabase_url"
+    },
+    {
+      "key": "REACT_APP_SUPABASE_ANON_KEY",
+      "value": "@react_app_supabase_anon_key"
+    }
+  ],
+  "regions": ["iad1"],
+  "functions": {
+    "api/**/*.js": {
+      "memory": 512,
+      "maxDuration": 30
+    }
+  }
+}
